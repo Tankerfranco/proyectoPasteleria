@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+
+.contenedorNav{
+    background-color: #E4C59E;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+}
+
+.contenedorNav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    height: 10vh;
+    position: relative;
+}
+
+
+
+.hero{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #322C2B;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.hero article{
+    text-align: start;
+    width: 40%;
+    padding-right: 50px;
+}
+
+.hero h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.hero p{
+    font-size: 16px;
+    line-height: 31.1px;
+}
+
+.hero img{
+    width: 250px;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrusel h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 300px;
+    height: 430px;
+    background-color: #E4C59E;
+    border: 2px solid #322C2B;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding-top: 40px;
+}
+
+.card h3{
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.card p{
+    text-align: center;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.card .precio{
+    padding-top: 30px;
+}
+
+.catalogo{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton{
+    width: 200px;
+    height: 60px;
+    border: 3px solid #322C2B;
+    background: #803D3B;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.nosotros{
+    background-image: url(./img/back-about.png);
+    background-position: center center;
+    background-size: cover;
+    background-color: #E4C59E;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    
+}
+
+.nosotros h2{
+    color: #FFFFFF;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.nosotrosTexto{
+    margin-top: 100px;
+    max-width: 50%;
+    padding: 50px 50px;
+    border-radius: 15px;
+    background-color: #322c2ba0;
+}
+
+.nosotrosTexto h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+
+.nosotrosTexto p{
+    font-size: 26px;
+}
