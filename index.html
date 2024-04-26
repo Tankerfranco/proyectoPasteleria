@@ -9,16 +9,16 @@
   <body>
     <nav class="contenedorNav">
       <ul>
-        <li>Inicio</li>
-        <li>Nosotros</li>
-        <li>Catálogo</li>
-        <li>Contacto</li>
-        <li>Localización</li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#localizacion">Localización</a></li>
       </ul>
     </nav>
 
     <main>
-      <section class="hero">
+      <div class="hero" id="inicio">
         <article>
           <h1>El dulce placer de la tradición</h1>
           <p>
@@ -31,67 +31,70 @@
         <div>
           <img src="./img/img.png" alt="pastelera" />
         </div>
-      </section>
+      </div>
       <img src="./img/ola2.svg" alt="ola" />
       <!-- CARRUSEL DE PRODUCTOS -->
-      <section class="carrusel">
+      <section class="carrusel" id="catalogo">
         <h2>Nuestros Postres</h2>
         <div class="cards">
-            <div class="card">
-                <div class="contenido">
-                    <h3>Bosque Negro</h3>
-                    <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-                    <img src="./img/pastel2.png" alt="">
-                    <p class="precio">$5000</p>
-                </div>
+          <div class="card">
+            <div class="contenido">
+              <h3>Bosque Negro</h3>
+              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
+              <img src="./img/pastel2.png" alt="" />
+              <p class="precio">$5000</p>
             </div>
-            <div class="card">
-                <div class="contenido">
-                    <h3>Selva Negra</h3>
-                    <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-                    <img src="./img/pastel3.png" alt="">
-                    <p class="precio">$5000</p>
-                </div>
+          </div>
+          <div class="card">
+            <div class="contenido">
+              <h3>Selva Negra</h3>
+              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
+              <img src="./img/pastel3.png" alt="" />
+              <p class="precio">$5000</p>
             </div>
-            <div class="card">
-                <div class="contenido">
-                    <h3>Torta de Oreo</h3>
-                    <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-                    <img src="./img/pastel4.png" alt="">
-                    <p class="precio">$5000</p>
-                </div>
-            </div> <div class="card">
-                <div class="contenido">
-                    <h3>Torta Mousse Nutella</h3>
-                    <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-                    <img src="./img/pastel5.png" alt="">
-                    <p class="precio">$5000</p>
-                </div>
+          </div>
+          <div class="card">
+            <div class="contenido">
+              <h3>Torta de Oreo</h3>
+              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
+              <img src="./img/pastel4.png" alt="" />
+              <p class="precio">$5000</p>
             </div>
-
+          </div>
+          <div class="card">
+            <div class="contenido">
+              <h3>Torta Mousse Nutella</h3>
+              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
+              <img src="./img/pastel5.png" alt="" />
+              <p class="precio">$5000</p>
+            </div>
+          </div>
         </div>
-        <h2 class="catalogo">Catálogo</h3>
+        <h3 class="catalogo">Catálogo</h3>
         <div class="botones">
-            <button class="boton">Pasteles</button>
-            <button class="boton">Galletas</button>
-            <button class="boton">Personalizado</button>
-            <button class="boton">Boxes</button>
+          <button class="boton">Pasteles</button>
+          <button class="boton">Galletas</button>
+          <button class="boton">Personalizado</button>
+          <button class="boton">Boxes</button>
         </div>
       </section>
       <!-- nosotros -->
-      <section class="nosotros">
+      <section class="nosotros" id="nosotros">
         <h2>Nosotros</h2>
         <div class="nosotrosTexto">
-            <h3>Titulo</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque debitis praesentium perspiciatis quod corrupti, vitae iure laudantium ad quo provident! Provident repudiandae beatae similique voluptatum, explicabo ab ipsam enim quam?</p>
+          <h3>Titulo</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+            debitis praesentium perspiciatis quod corrupti, vitae iure
+            laudantium ad quo provident! Provident repudiandae beatae similique
+            voluptatum, explicabo ab ipsam enim quam?
+          </p>
         </div>
       </section>
+      
     </main>
-    <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+        
+    </footer>
   </body>
 </html>
