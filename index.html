@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dulce Obsesión</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/favicon-32x32.ico"/>
   </head>
   <body>
     <nav class="contenedorNav">
@@ -17,6 +18,7 @@
       </ul>
     </nav>
 
+
     <main>
       <div class="hero" id="inicio">
         <article>
@@ -28,12 +30,9 @@
             selectos y el más puro amor por la repostería tradicional.
           </p>
         </article>
-        <div>
-          <img src="./img/img.png" alt="pastelera" />
-        </div>
+        <img class="ola" src="./img/img.png" alt="pastelera" />
       </div>
       <img src="./img/ola2.svg" alt="ola" />
-      <!-- CARRUSEL DE PRODUCTOS -->
       <section class="carrusel" id="catalogo">
         <h2>Nuestros Postres</h2>
         <div class="cards">
@@ -41,7 +40,7 @@
             <div class="contenido">
               <h3>Bosque Negro</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel2.png" alt="" />
+              <img src="./img/pastel2.png" alt="Torta Bosque Negro" />
               <p class="precio">$5000</p>
             </div>
           </div>
@@ -49,7 +48,7 @@
             <div class="contenido">
               <h3>Selva Negra</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel3.png" alt="" />
+              <img src="./img/pastel3.png" alt="Torta Selva Negra" />
               <p class="precio">$5000</p>
             </div>
           </div>
@@ -57,7 +56,7 @@
             <div class="contenido">
               <h3>Torta de Oreo</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel4.png" alt="" />
+              <img src="./img/pastel4.png" alt="Torta de Oreo" />
               <p class="precio">$5000</p>
             </div>
           </div>
@@ -65,7 +64,7 @@
             <div class="contenido">
               <h3>Torta Mousse Nutella</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel5.png" alt="" />
+              <img src="./img/pastel5.png" alt="Torta de Mousse Nutella" />
               <p class="precio">$5000</p>
             </div>
           </div>
@@ -91,10 +90,67 @@
           </p>
         </div>
       </section>
-      
+      <!-- localizacion -->
+      <section class="localizacion" id="localizacion">
+        <h2>Ven a visitarnos en:</h2>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2233550457413!2d-58.44356532377824!3d-34.59851315722426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0b46479e95%3A0xa28d29e434ee9a14!2sAcevedo%20377%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714599213585!5m2!1ses-419!2sar"
+            width="100"
+            height="450"
+            style="border: 0px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
-    <footer>
-        
+
+    <footer class="contenedorFooter">
+      <div class="logo">
+        <img class="logoImg" src="./img/logo.png" alt="logo" />
+        <div class="socialMedia" id="socialMedia">
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/tiendapasteleria/"
+                target="_blank"
+                title="Seguinos en Instagram"
+              >
+                <img src="/img/instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/dolciarg/"
+                target="_blank"
+                title="Seguinos en Facebook"
+              >
+                <img src="/img/facebook.png" alt="Facebook" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="seccionesFooter" id="seccionesFooter">
+        <ul>
+          <li><h5>FAQ</h5></li>
+          <li><a href="#localizacion">Localización</a></li>
+        </ul>
+
+        <ul>
+          <li><h5>Sobre Nosotros</h5></li>
+          <li><a href="#nosotros">Nuestra historia</a></li>
+        </ul>
+
+        <ul>
+          <li><h5>Contacto</h5></li>
+          <li>Celular: 11 1232333</li>
+          <li>Email: pasteleria@gmail.com</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
