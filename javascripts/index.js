@@ -1,4 +1,4 @@
-/* document.getElementById('jcFormularioContactenos').addEventListener('submit', function(event){
+document.getElementById('jcFormularioContactenos').addEventListener('submit', function(event){
     let form = event.target;
     let jcNombre = form.jcNombre.value.trim();
 
@@ -122,4 +122,4 @@ document.getElementById('jcFormularioSuscribirse').addEventListener('submit', fu
         event.preventDefault();
     }
 
-}) */
+})

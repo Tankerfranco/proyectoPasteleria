@@ -75,6 +75,10 @@
 .hero img{
     width: 290px;
 }
+
+.hero img:hover{
+    transform: rotate3d(1, 2, 3, 10deg);
+}
 .ola{
     width: 100%;
     height: 20%;
@@ -211,8 +215,11 @@
 .socialMedia img{
      width: 50px;
     height: auto;
+}
 
-} 
+.socialMedia img:hover{
+    transform: rotate(35deg);
+}
 .seccionesFooter{
     display: flex;
     justify-content: space-around;
@@ -381,7 +388,7 @@
     padding: 27px;
     border-radius: 20px;
 }
-.FormularioContactenos input{
+.FormularioContactenos input, select{
     background-color: #453F3E;
     color: white;
     padding: 18px 18px;
@@ -456,6 +463,13 @@
     font-family: "Lora";
     background-color: #322C2B !important;
     color: white;
+}
+
+.labelRespuesta{
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    
 }
 /************************************/
 /************************************/

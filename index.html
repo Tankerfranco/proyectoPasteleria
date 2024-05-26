@@ -91,20 +91,24 @@
         <div class="ContainerTitulo" id="contacto">Contáctanos!</div>
         <div class="ContainerContactenos">
           <form id="FormularioContactenos" class="FormularioContactenos">
-            
-            
-              <input type="text" name="Nombre" id="DatNombre" class="Nombre Datos" placeholder="Nombre">
-              <input type="text" name="Apellido" id="DatApellido" class="Apellido Datos" placeholder="Apellido">
-              <input type="email" name=cCorreo" id="Correo" class="Correo Datos" placeholder="Correo"> 
-              <input type="email" name=cCorreo" id="Correo" class="Correo Datos" placeholder="Selecciones tipo de producto">          
-            
-              <textarea name="Observaciones" id="Observaciones" class="Observaciones Datos" placeholder="Mensaje"></textarea>
+              <input type="text" name="Nombre" id="DatNombre" class="Nombre Datos" placeholder="Nombre" required>
+              <input type="text" name="Apellido" id="DatApellido" class="Apellido Datos" placeholder="Apellido" required>
+              <input type="email" name="Correo" id="Correo" class="Correo Datos" placeholder="Correo" required> 
+              <select name="genero" class="Correo Datos" required>
+                <option value="#">Indique su genero</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+              </select>
+              <textarea name="Observaciones" id="Observaciones" class="Observaciones Datos" placeholder="Mensaje" required></textarea>
               <input type="submit" value="Enviar" class="BotonContactenosSubmit" id="BotonContactenosSubmit">
              
           </form>
           <form id="FormularioSuscribirse" class="FormularioSuscribirse">
-              <h3>Suscribete para obtener nuevas recetas!</h3>
-              <input type="email" name="Correo" id="Correo" class="Correo Datos" placeholder="Email">
+              <h3>¿Quieres suscribirte para obtener nuevas recetas?</h3>
+              <label for="" class="labelRespuesta">
+                <input type="radio" name="respuesta" value="si">si <input type="radio" name="respuesta" value="no">no
+              </label>
               <input type="submit" value="Enviar" class="BotonSuscribirseSubmit"> 
           </form>
         </div>
