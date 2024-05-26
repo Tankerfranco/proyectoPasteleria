@@ -130,7 +130,7 @@
 
 .catalogo{
     text-align: center;
-    margin: 100px 0px;
+    margin: 50px 0px;
     font-size: 30px;
 }
 
@@ -298,4 +298,399 @@
     .seccionesFooter li{
         justify-content: center;
     }
+}
+
+
+
+/*********************************************/
+/*********************************************/
+/*****     LLAMADO A FUENTES LOCALES     *****/
+/*********************************************/
+/*********************************************/
+/*********************************************/
+/*********************************************/
+/*****     CONFIGURACION NOSOTROS     ********/
+/*********************************************/
+/*********************************************/
+.jcNosotros{
+    width: 100%;
+    background-image: url(./img/back-about.png);
+    background-position: center center;
+    background-size: cover;
+    background-color: #AF8260;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.jcNosotros h2{
+    font-size: 2.5rem;
+    margin: auto auto 50px auto;
+    text-align: center;
+    font-family: "Lora";
+    font-weight: 600;
+    color: white;
+}
+
+.jcNosotrosContenedor{
+    text-align: center;
+    width: 75%;
+    margin: 20px;
+    padding: 60px;
+    height: auto;
+    background-color: #322c2b65;
+    border-radius: 20px;
+
+}
+
+.jcNosotrosContenedor h3{
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.jcNosotrosContenedor p{
+    letter-spacing: 1.2px;
+    line-height: 45px;
+    font-family: "Lora";
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+}
+
+/************************************************/
+/************************************************/
+/*****     CONFIGURACION CONTACTENOS     ********/
+/************************************************/
+/************************************************/
+
+.Contactenos{
+    display:flex;
+    width:100%;
+    height: fit-content;
+    background-image: url(./img/back-about.png);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(112, 19, 19, 0.9);  
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.ContainerContactenos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin: 55px auto auto auto;
+}
+.ContainerTitulo{
+    font-size: 2rem;
+    color: white;
+    font-family: "Lora";
+    text-align: center;
+}
+.FormularioContactenos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 27px;
+    border-radius: 20px;
+}
+.FormularioContactenos input{
+    background-color: #453F3E;
+    color: white;
+    padding: 18px 18px;
+    border-style: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: "Lora";
+    font-weight: 300;
+    border-radius: 10px;
+    
+}
+
+.FormularioContactenos textarea{
+    width: 100%;
+    height: 110px;
+    background-color: #453F3E;
+    color: white;
+   
+}
+.FormularioContactenos textarea::placeholder{
+    font-family: "Lora";
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+   
+}
+
+.FormularioContactenos input::placeholder{
+    color: white;
+}
+.BotonContactenosSubmit{
+    background-color: #322C2B !important;
+    cursor: pointer;
+}
+.FormularioSuscribirse{
+    margin: 0;
+    font-family: "Lora";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    width: auto;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    outline: none;
+}
+.FormularioSuscribirse h3{
+    color: black;
+    font-family: "Lora";
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.FormularioSuscribirse input{
+    background-color: #453F3E;
+    padding: 12px;
+    border-radius: 15px;
+    border-style: none;
+    outline: none;
+    font-family: "Lora";
+    font-size: 1rem;
+}
+.FormularioSuscribirse input::placeholder{
+    color: white;
+    outline: none;
+}
+.BotonSuscribirseSubmit{
+    margin: auto;
+    width: 280px;
+    cursor: pointer;
+    font-family: "Lora";
+    background-color: #322C2B !important;
+    color: white;
+}
+/************************************/
+/************************************/
+/*****     CONFIGURACION DE     *****/
+/*****     GRID CONTACTENOS     *****/
+/*****      DIV IZQUIERDO       *****/
+/************************************/
+/************************************/
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/***     ****   *****   ***   ****    ***   *   *   ***   ***  *   *  *****     ***/
+/***     *   *  *      *      *   *  *   *  **  *  *       *   *   *  *         ***/
+/***     ****   ***     ***   ****   *   *  * * *   ***    *    * *   ***       ***/
+/***     * *    *          *  *      *   *  *  **      *   *    * *   *         ***/
+/***     *  *   *****   ***   *       ***   *   *   ***   ***    *    *****     ***/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1160px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1160px){
+/*********************************************/
+/*********************************************/
+/*****     CONFIGURACION NOSOTROS     ********/
+/*********************************************/
+/*********************************************/
+    .jcNosotrosContenedor h3 span{
+        display: block;
+    }
+}
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 600px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:768px){
+    .jcNosotros h2{
+        font-size: 6.666666667vw;
+        letter-spacing: 0.333333333vw;
+        text-shadow: -0.25vw -0.25vw 0.25vw rgb(0,0,0), 0.25vw 0.25vw 0.25vw rgb(255,255,255);
+    
+        margin: 6.666666667vw;
+    }
+    
+    .jcNosotrosContenedor{
+        margin:0 8.333333333vw 5vw 8.333333333vw;
+        padding: 8.333333333vw;
+        border-radius: 5vw / 8.333333333vw;
+    }
+
+    .ContainerContactenos{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    .FormularioContactenos{
+        width: 50%;
+    }
+    
+    .jcNosotrosContenedor h3 span{
+        font-size: 5.833333333vw;
+    }
+    
+    .jcNosotrosContenedor h3{
+        text-align: center;
+        margin: 3.333333333vw 0 6.666666667vw 0;
+    }
+
+    
+    
+    .jcNosotrosContenedor p{
+        line-height: 50px;
+        font-size: 5vw;
+    }    
+}
+
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 1200px      *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:1200px){
+/************************************************/
+/************************************************/
+/*****     CONFIGURACION CONTACTENOS     ********/
+/************************************************/
+/************************************************/
+    .jcGridContactenos{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        margin: 0 50px 0 50px;
+        gap:40px;
+    }
+    .jcGridContactenosTitulo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width:100%;
+    }
+    .jcGridContactenosDivI{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width:100%;
+    }
+    .jcGridContactenosDivDS{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width:100%;
+    }
+    .jcGridContactenosDivDI{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        width:100%;
+    }
+}
+/*************************************************************/
+/*************************************************************/
+/*****     Cuando la resolución máxima es de 425px       *****/
+/*************************************************************/
+/*************************************************************/
+@media screen and (max-width:425px){
+    .jcContactenos{
+        margin-top: 21.73913043vw;
+        padding: 6.52173913vw 0;
+    }
+
+    .FormularioContactenos{
+        width: 80%;
+    }
+
+    .jcGridContactenos{
+        margin: 0 10.86956522vw 0 10.86956522vw;
+        gap: 8.695652174vw;
+    } 
+    .jcGridContactenosTitulo{
+        padding:8.695652174vw;
+        font-size: 6.52173913vw;
+    }
+    .jcGridContactenosDivI{
+        gap: 4.347826087vw;
+        padding: 6.52173913vw;
+        border-radius: 4.347826087vw;        
+    }
+    .jcGridContactenosDivI .jcObservaciones{
+        height: 21.73913043vw; /* Altura predeterminada */
+    }
+    .jcGridContactenosDivDS{
+        gap: 4.347826087vw;
+        padding: 6.52173913vw;
+        border-radius: 4.347826087vw;    
+    }
+    .jcGridContactenosDivDS h3{
+        font-size: 4.347826087vw;
+        padding: 1.739130435vw 3.260869565vw;
+        border-radius: 2.173913043vw;
+    }
+    .jcGridContactenosDivDI{
+        gap:4.347826087vw;
+        padding: 6.52173913vw;
+        border-radius: 4.347826087vw;
+    }
+    .jcGridContactenosDivDI p{
+        font-size: 3.47826087vw;
+        line-height: 4.347826087vw;
+        margin:2.173913043vw;
+    }
+    .jcGridContactenosDivDI p::first-letter{
+        font-size: 6.956521739vw;
+    }
+    p:first-line{
+        margin-left: 4.347826087vw;
+        text-indent: 8.695652174vw;
+    }
+    .jcTitulos{
+        font-size: 3.47826087vw;
+        padding: 1.739130435vw 3.260869565vw;
+        border-radius: 2.173913043vw;
+    }
+    .jcDatos{
+        font-size: 3.47826087vw;
+        padding: 1.739130435vw 3.260869565vw;
+        border-radius: 2.173913043vw;
+    }
+    .jcChkBoxSpan {
+        font-size: 3.47826087vw;
+    }
+    .jcChkBoxOpcion{
+        font-size: 3.47826087vw;
+    }
+    .jcBotonContactenosSubmit, .jcBotonSuscribirseSubmit {
+        font-size: 3.47826087vw;
+        padding: 1.739130435vw 3.260869565vw;
+        border-radius: 2.173913043vw;
+    }
+
+    .FormularioSuscribirse{
+        width: 80%;
+    }
+
+    .BotonSuscribirseSubmit{
+        width: 100%;
+    }
+
+    .jcNosotrosContenedor p{
+        line-height: 30px;
+        font-size: 5vw;
+    } 
 }
