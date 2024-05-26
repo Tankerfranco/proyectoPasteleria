@@ -95,7 +95,7 @@
               <input type="text" name="Apellido" id="DatApellido" class="Apellido Datos" placeholder="Apellido" required>
               <input type="email" name="Correo" id="Correo" class="Correo Datos" placeholder="Correo" required> 
               <select name="genero" class="Correo Datos" required>
-                <option selected>Indique su genero</option>
+                <option selected value="nada">Indique su genero</option>
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
                 <option value="otro">Otro</option>
@@ -106,9 +106,14 @@
           </form>
           <form id="FormularioSuscribirse" class="FormularioSuscribirse">
               <h3>¿Quieres suscribirte para obtener nuevas recetas?</h3>
-              <label for="respuesta" class="labelRespuesta">
-                <input type="radio" name="respuesta" value="si" id="respuesta">si <input type="radio" name="respuesta" value="no" id="respuesta">no
-              </label>
+              <div class="respuestas">
+                <label for="respuestaSi" class="labelRespuesta">
+                  <input type="radio" name="respuesta" value="si" id="respuestaSi">si
+                </label>
+                <label for="respuestaNo" class="labelRespuesta">
+                  <input type="radio" name="respuesta" value="no" id="respuestaNo">no
+                </label>
+              </div>
               <input type="submit" value="Enviar" class="BotonSuscribirseSubmit"> 
           </form>
         </div>
