@@ -274,6 +274,7 @@
 
     .hero{
         padding-top: 100px;
+        gap: 30px;
     }
 
    .hero article{
@@ -283,9 +284,7 @@
     margin: 0;
    }
 
-    .hero img{
-        display: none;
-    }
+    
     .contenedorFooter{
         flex-direction: column;
         align-items: center;
