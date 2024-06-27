@@ -44,10 +44,11 @@ main {
   }
 
   .logo img{
-    width: 105px;
-    background-color: #803D3B;
+    width: 100px;
+    background-color: #ffffff;
     border-radius: 60px;
     padding: 2px;
+    border: 2px solid #803D3B;
 
   }
 
@@ -109,6 +110,7 @@ form{
 h1{
     font-family: sofi-semi;
     margin: 10px 0;
+    color: #322C2B;
 }
 label, input, button{
     margin: 8px 0px;
