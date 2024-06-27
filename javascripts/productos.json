@@ -1,0 +1,28 @@
+[{
+    "id":1,
+    "name":"Bosque Negro",
+    "contenido":"Chocolate negro, licor de cereza, mermelada de cereza",
+    "price":5000,
+    "image":"./img/pastel2.png"
+},
+{
+    "id":2,
+    "name":"Torta de Oreo",
+    "contenido":"Chocolate negro, licor de cereza, mermelada de cereza",
+    "price":4000,
+    "image":"./img/pastel3.png"
+},
+{
+    "id":3,
+    "name":"Selva Negra",
+    "contenido":"Chocolate negro, licor de cereza, mermelada de cereza",
+    "price":5000,
+    "image":"./img/pastel4.png"
+},
+{
+    "id":4,
+    "name":"Bosque Negro",
+    "contenido":"Chocolate negro, licor de cereza, mermelada de cereza",
+    "price":5000,
+    "image":"./img/pastel5.png"
+}]

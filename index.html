@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./img/favicon-32x32.ico"/>
   </head>
-  <body>
+  <body class="showCart">
     <nav class="contenedorNav">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -15,6 +15,10 @@
         <li><a href="#catalogo">Catálogo</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#localizacion">Localización</a></li>
+        <li class="icon-cart"><svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        </li>
       </ul>
     </nav>
 
@@ -36,15 +40,14 @@
       <section class="carrusel" id="catalogo">
         <h2>Nuestros Postres</h2>
         <div class="cards">
-          <div class="card">
-            <div class="contenido">
+          <!-- <div class="card">
               <h3>Bosque Negro</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
               <img src="./img/pastel2.png" alt="Torta Bosque Negro" />
               <p class="precio">$5000</p>
-            </div>
-          </div>
-          <div class="card">
+              <button class="addCart">Agregar al carrito</button>
+          </div> -->
+          <!-- <div class="card">
             <div class="contenido">
               <h3>Selva Negra</h3>
               <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
@@ -67,7 +70,7 @@
               <img src="./img/pastel5.png" alt="Torta de Mousse Nutella" />
               <p class="precio">$5000</p>
             </div>
-          </div>
+          </div> -->
         </div>
         <h3 class="catalogo">Catálogo</h3>
         <div class="botones">
@@ -133,6 +136,35 @@
           ></iframe>
         </div>
       </section>
+      <section class="contenedorCart">
+        <div class="cardTab">
+          <h1>Carrito</h1>
+          <div class="listCart">
+            <!-- <div class="item">
+              <div class="image">
+                <img src="./img/pastel2.png" alt="">
+              </div>
+              <div class="name">
+                NAME
+              </div>
+              <div class="totalPrice">
+                $200
+              </div>
+              <div class="quantity">
+                <span class="minus"><</span>
+                <span>1</span>
+                <span class="plus">></span>
+              </div>
+            </div> -->
+            
+          </div>
+          <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK OUT</button>
+          </div>
+        </div>
+      </section>
+      
     </main>
 
     <footer class="contenedorFooter">
@@ -178,6 +210,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./javascripts/carritoPestania.js"></script>
   </body>
 </html>
 

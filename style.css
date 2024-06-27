@@ -39,6 +39,91 @@
     color: #FFFFFF;
 }
 
+.icon-cart{
+    color: #000;
+}
+
+.cardTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    z-index: 10;
+}
+
+body.showCart .cardTab{
+    inset: 0 0 0 auto;
+}
+
+
+.cardTab h1{
+    margin: 0;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.cardTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.cardTab .btn button{
+    background-color: #803D3B;
+    border: none;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cardTab .btn .close{
+    background-color: #eee;
+}
+
+.cardTab .listCart .item img{
+    width: 100%;
+}
+
+.cardTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+/* transition: transform .5s; */
+
 
 
 .hero{
@@ -49,6 +134,7 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    
 }
 
 .hero article{
@@ -138,6 +224,10 @@
 .card .precio{
     padding-top: 30px;
 }
+
+/* .addCart{
+    HAY QUE PONER UN DISE;O PARA LOS BOTONES
+} */
 
 .catalogo{
     text-align: center;
