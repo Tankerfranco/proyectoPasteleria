@@ -48,14 +48,14 @@
     background-color: #353432;
     color: #eee;
     position: fixed;
-    inset: 0 -400px 0 auto;
+    inset: 0 0 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     z-index: 10;
 }
 
 body.showCart .cardTab{
-    inset: 0 0 0 auto;
+    inset: 0 -400px 0 auto;
 }
 
 
