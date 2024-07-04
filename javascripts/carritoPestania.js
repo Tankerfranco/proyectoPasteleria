@@ -3,6 +3,7 @@ let closeCart = document.querySelector(".close");
 let body = document.querySelector("body");
 let listProductHTML = document.querySelector(".cards");
 let listCartHTML = document.querySelector(".listCart")
+let agregarAlCarro = document.querySelector(".addCart")
 
 let listProduct = [];
 let carts = [];
@@ -14,6 +15,8 @@ iconCart.addEventListener("click", () => {
 closeCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
 });
+
+
 
 const addDataToHTML = () => {
   listProductHTML.innerHTML = "";
@@ -30,11 +33,15 @@ const addDataToHTML = () => {
               <button class="addCart">Agregar al carrito</button>
               `;
               listProductHTML.appendChild(newProduct)
+              
     });
   }
 };
+
+
 listProductHTML.addEventListener('click',(event)=>{
     let positionClick = event.target
+    body.classList.toggle("showCart");
     if(positionClick.classList.contains('addCart')){
         let product_id = positionClick.parentElement.dataset.id
         addToCart(product_id)
@@ -43,6 +50,7 @@ listProductHTML.addEventListener('click',(event)=>{
 
 const addToCart = (product_id) =>{
     let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id)
+    
     if(carts.length <= 0 ){
         carts = [{
             product_id:product_id,
@@ -124,6 +132,8 @@ const changeQuantityCart = (product_id, type) => {
     addToCartToHTML();
    
 }
+
+
 
 const initApp = () => {
   fetch("./javascripts/productos.json")

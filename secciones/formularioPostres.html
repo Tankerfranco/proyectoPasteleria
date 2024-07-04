@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de Postres</title>
+</head>
+<body>
+    <div class="contenedorFormulario">
+        <form id="form-crear-tortas">
+            <label for="nuevoNombre">Nombre</label>
+            <input type="text" name="nombre" id="nuevoNombre" required>
+            <label for="nuevaDescripcion">Descripcion</label>
+            <textarea name="descripcion" id="nuevaDescripcion"></textarea>
+            <label for="nuevoPrecio">Precio</label>
+            <input type="number" name="precio" id="nuevoPrecio">
+            <label for="nuevaFoto">Foto</label>
+            <input type="file" name="foto" id="nuevaFoto">
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+    <script src="../javascripts/crearPostres.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
