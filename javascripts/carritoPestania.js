@@ -4,7 +4,9 @@ let body = document.querySelector("body");
 let listProductHTML = document.querySelector(".cards");
 let listCartHTML = document.querySelector(".listCart")
 let agregarAlCarro = document.querySelector(".addCart")
-
+let lista = document.querySelector('.cardTab');
+let contenedorCart = document.querySelector('#contenedorCart');
+let btn = document.querySelector('.addCart');
 let listProduct = [];
 let carts = [];
 
@@ -36,9 +38,8 @@ const addDataToHTML = () => {
               
     });
   }
+  
 };
-
-
 listProductHTML.addEventListener('click',(event)=>{
     let positionClick = event.target
     body.classList.toggle("showCart");
@@ -47,6 +48,8 @@ listProductHTML.addEventListener('click',(event)=>{
         addToCart(product_id)
     }
 })
+
+
 
 const addToCart = (product_id) =>{
     let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id)
@@ -97,6 +100,8 @@ const addToCartToHTML = () =>{
         })
     }
 }
+
+
 
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
