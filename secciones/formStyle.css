@@ -1,0 +1,150 @@
+@font-face {
+    font-family: sofi-bold;
+    src: url(/registro-inicio/fonts/SofiaProBold.ttf);
+}
+@font-face {
+    font-family: sofi-medium;
+    src: url(/registro-inicio/fonts/SofiaProMedium.ttf);
+}
+@font-face {
+    font-family: sofi-semi;
+    src: url(/registro-inicio/fonts/SofiaProSemiBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background: url("/secciones/img/bg-blur.png") lightgray 50% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+ }
+
+ section{
+    margin: auto;
+    width: 55%;
+    height: 95%;
+    background: url("/registro-inicio/img/texture.jpg");
+    background-size: contain;
+    border-radius: 32px;
+    border: 5px solid #322C2B;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ section h1{
+    font-size: 1.2rem;
+    font-family: sofi-semi;
+    margin: 10px 0;
+    text-align: center;
+ }
+.logo{
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 85px;
+    padding: 5px;
+    border: 2px solid #803D3B;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+ form{
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #803D3B;
+    background: #FFF;
+ }
+ .contenedor-form{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    border: none;
+    padding: 20px;
+    
+ }
+ .form-img, .inputs{
+    width: auto;
+    height: auto;
+    border: none;
+    margin: auto;
+    
+    
+ }
+
+
+.input-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.input-content input, textarea{
+    margin: 30px 10px;
+    width: 260px;
+    height: 30px;
+    border: none;
+    background-color: rgba(128, 61, 59, 0.22);
+    border-bottom: 2px solid #322C2B;
+    outline: none;
+    
+}
+
+
+.input-content label{
+    text-align: center;
+    font-family: sofi-semi;
+    width: 20%;
+
+}
+
+
+ .form-img{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #434343;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+ }
+.input-file {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    
+ }
+ .input-file input[type="file"]{
+    display: none;
+ }
+ .input-file label{
+    margin: auto;
+    font-size: 1rem;
+    font-family: sofi-medium;
+    cursor: pointer;
+ }
+
+ button{
+    font-family: sofi-semi;
+    margin: 30px 0;
+    width: 40%;
+    height: 60px;
+    border-style: none;
+    background: #803D3B;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+ }

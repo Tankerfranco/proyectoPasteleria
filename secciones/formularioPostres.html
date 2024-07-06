@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formStyle.css" />
     <title>Creacion de Postres</title>
-</head>
-<body>
-    <div class="contenedorFormulario">
-        <form id="form-crear-tortas">
-            <label for="nuevoNombre">Nombre</label>
-            <input type="text" name="nombre" id="nuevoNombre" required>
-            <label for="nuevaDescripcion">Descripcion</label>
-            <textarea name="descripcion" id="nuevaDescripcion"></textarea>
-            <label for="nuevoPrecio">Precio</label>
-            <input type="number" name="precio" id="nuevoPrecio">
-            <label for="nuevaFoto">Foto</label>
-            <input type="file" name="foto" id="nuevaFoto">
-            <button type="submit">Crear</button>
+  </head>
+  <body>
+    <main>
+      <section class="contenedor">
+        <a href="/index.html"><img src="/registro-inicio/img/logo.png" alt="" class="logo" /></a>
+        <h1>Añade tus postres</h1>
+
+        <form id="form-crear-tortas" class="form">
+          <fieldset class="contenedor-form">
+            <fieldset class="form-img">
+                <div class="input-file">
+                    
+                    <label for="nuevaFoto">Selecciona una foto</label>
+                    <input type="file" name="foto" id="nuevaFoto">
+                </div>
+            </fieldset>
+            <fieldset class="inputs">
+                <div class="input-content">
+                    <label for="nuevoNombre">Nombre</label> 
+                    <input type="text" name="nombre" id="nuevoNombre" required />
+
+                </div>
+               <div class="input-content">
+
+                    <label for="nuevaDescripcion">Descripcion</label>
+                    <textarea name="descripcion" id="nuevaDescripcion"></textarea>
+                </div>
+                <div class="input-content">
+
+                    <label for="nuevoPrecio" class="precio">Precio</label>
+                    <input type="number" name="precio" id="nuevoPrecio" /> 
+                </div>
+            </fieldset>
+          </fieldset>
+
         </form>
-    </div>
+        <button type="submit">Confirmar</button>
+      </section>
+    </main>
     <script src="../javascripts/crearPostres.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</body>
+  </body>
 </html>
