@@ -1,0 +1,132 @@
+@font-face {
+    font-family: sofi-bold;
+    src: url(/registro-inicio/fonts/SofiaProBold.ttf);
+}
+@font-face {
+    font-family: sofi-medium;
+    src: url(/registro-inicio/fonts/SofiaProMedium.ttf);
+}
+@font-face {
+    font-family: sofi-semi;
+    src: url(/registro-inicio/fonts/SofiaProSemiBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background: url("/secciones/img/bg-blur.png") lightgray 50% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+section{
+   
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+border: 3px solid #803D3B;
+}
+
+.title{
+    text-align: center;
+    font-family: sofi-semi;
+    font-size: 2rem;
+    margin: 10px auto;
+}
+.list-container{
+    width: 93%;
+    height: auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container{
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 25px auto;
+}
+.arrow{
+    width: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+article{
+    width: 15%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+border: 3px solid #803D3B;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+text-align: center;
+
+}
+textarea{
+    border: none;
+    background-color: rgba(128, 61, 59, 0.22);
+    border-bottom: 2px solid #322C2B;
+    outline: none;
+}
+
+figure{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #7E7A7A;
+}
+
+figure img{
+    width: 100%;
+
+}
+
+article h1, h3, p {
+    font-size: 1rem;
+    font-family: sofi-semi;
+    margin: 2px;
+}
+
+
+button{
+    width: auto;
+    height: auto;
+    font-family: sofi-semi;
+    border-style: none;
+    background: #803D3B;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+textarea{
+    margin: auto;
+    text-align: center;
+    height: 23px;
+}

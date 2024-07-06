@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formStyle.css">
     <title>Editar Postres</title>
 </head>
 <body>
-    <div class="contenedorFormulario">
-        <form id="form-editar-tortas">
-            <label for="editarNombre">Nombre</label>
-            <input type="text" name="nombre" id="editarNombre" required>
-            <label for="editarDescripcion">Descripcion</label>
-            <textarea name="descripcion" id="editarDescripcion"></textarea>
-            <label for="editarPrecio">Precio</label>
-            <input type="number" name="precio" id="editarPrecio">
-            <label for="editarFoto">Foto</label>
-            <input type="file" name="foto" id="editarFoto">
-            <button type="submit">Crear</button>
-        </form>
-    </div>
+    <main>
+        <section class="contenedor">
+          <a href="/index.html"><img src="/registro-inicio/img/logo.png" alt="" class="logo" /></a>
+          <h1>Edita tus postres</h1>
+  
+          <form id="form-crear-tortas" class="form">
+            <fieldset class="contenedor-form">
+              <fieldset class="form-img">
+                  <div class="input-file">
+                      
+                      <label for="editarFoto">Selecciona una foto</label>
+                      <input type="file" name="foto" id="editarFoto">
+                  </div>
+              </fieldset>
+              <fieldset class="inputs">
+                  <div class="input-content">
+                    <label for="editarNombre">Nombre</label>
+                    <input type="text" name="nombre" id="editarNombre" required>
+  
+                  </div>
+                 <div class="input-content">
+                    <label for="editarPrecio">Descripcion</label>
+                    <textarea name="descripcion" id="editarDescripcion"></textarea>
+                  </div>
+                  <div class="input-content">
+  
+                      <label for="nuevoPrecio" class="precio">Precio</label>
+                      <input type="number" name="precio" id="nuevoPrecio" placeholder="$0.00" value="$"/> 
+                  </div>
+              </fieldset>
+            </fieldset>
+  
+          </form>
+          <button type="submit">Confirmar</button>
+        </section>
+      </main>
+    
     <script src="../javascripts/editPostres.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
