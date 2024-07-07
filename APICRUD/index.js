@@ -6,16 +6,12 @@ const posteosRouter = require("./routes/postresRouter.js")
 const db = require ("./data/db.js")
 
 app.use(cors())
-app.use (express.json()) // analizamos y lo ponemos en formato req.body
+app.use (express.json())
 
-    /*    pedido http/ruta - funcion = controler */
-app.get ("/",(req,res)=>{
-    res.send("estas en el home")
-}) // sin modularizar
 
 app.use ("/postres",posteosRouter)
 
-// conexion a la base de datos
+
 const conexiondb = async ()=>{
  try {
     await db.authenticate()

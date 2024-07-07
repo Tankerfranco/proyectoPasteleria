@@ -1,5 +1,6 @@
 //! Traemos el modelo creado
 const postresModel = require("../models/postresModel.js")
+const fs = require("fs")
 //!Empezamos con el CRUD
 //?TRAER TODOS
 const traerPostres = async (req, res) =>{
@@ -22,12 +23,26 @@ const traerUnPostre = async (req, res) =>{
 //?CREAR UN POSTRE
 const crearUnPostre = async (req, res) =>{
     try {
-        await postresModel.create(req.body)
+        const {nombre, contenido, precio} = req.body
+        const newPath = saveImage(req.file)
+        await postresModel.create({
+            nombre,
+            contenido,
+            precio,
+            ruta_foto: newPath
+        })
         res.json({"message":"Registro creado"})
     } catch (error) {
         res.json({message:error.message})
     }
 }
+
+function saveImage(file) {
+    const newPath = `../img/${file.originalname}`;
+    fs.renameSync(file.path, newPath);
+    return newPath;
+  }
+
 //?Borrar un postre
 const borrarUnPostre = async (req,res) =>{
     try {
@@ -43,9 +58,10 @@ const borrarUnPostre = async (req,res) =>{
 //?Editar un postre
 const modificarUnPostre = async (req, res) =>{
     try {
-        await postresModel.update({
-            where: {id: req.params.id}
-        })
+        await postresModel.update(
+            req.body,
+            { where: { id: req.params.id } }
+        );
         res.json({"message":"Registro actualizado"})
     } catch (error) {
         res.json({message:error.message})

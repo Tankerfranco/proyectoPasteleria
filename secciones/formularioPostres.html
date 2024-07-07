@@ -12,11 +12,10 @@
         <a href="/index.html"><img src="/registro-inicio/img/logo.png" alt="" class="logo" /></a>
         <h1>Añade tus postres</h1>
 
-        <form id="form-crear-tortas" class="form">
+        <form id="form-crear-tortas" class="form" enctype="multipart/form-data">
           <fieldset class="contenedor-form">
             <fieldset class="form-img">
                 <div class="input-file">
-                    
                     <label for="nuevaFoto">Selecciona una foto</label>
                     <input type="file" name="foto" id="nuevaFoto">
                 </div>
@@ -39,9 +38,9 @@
                 </div>
             </fieldset>
           </fieldset>
-
+          <button type="submit">Confirmar</button>
         </form>
-        <button type="submit">Confirmar</button>
+        
       </section>
     </main>
     <script src="../javascripts/crearPostres.js"></script>
