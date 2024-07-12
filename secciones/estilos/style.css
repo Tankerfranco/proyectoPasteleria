@@ -805,3 +805,7 @@ body.showCart .cardTab{
         font-size: 5vw;
     } 
 }
+
+.contenedorAdmin{
+    background: url(/secciones/img/bg-blur.png);
+}

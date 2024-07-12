@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dulce Obsesión</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./img/favicon-32x32.ico"/>
+    <link rel="stylesheet" href="./secciones/estilos/style.css" />
+    <link rel="icon" href="./secciones/img/favicon-32x32.ico"/>
   </head>
   <body class="showCart">
     <nav class="contenedorNav">
@@ -34,46 +34,12 @@
             selectos y el más puro amor por la repostería tradicional.
           </p>
         </article>
-        <img src="./img/img.png" alt="pastelera" />
+        <img src="./secciones/img/img.png" alt="pastelera" />
       </div>
-      <img class="ola" src="./img/wave.svg" alt="ola" />
+      <img class="ola" src="./secciones/img/wave.svg" alt="ola" />
       <section class="carrusel" id="catalogo">
         <h2>Nuestros Postres</h2>
         <div class="cards">
-          <!-- <div class="card">
-              <h3>Bosque Negro</h3>
-              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel2.png" alt="Torta Bosque Negro" />
-              <p class="precio">$5000</p>
-              <button class="addCart">Agregar al carrito</button>
-          </div> -->
-          <!-- <div class="card">
-            <div class="contenido">
-              <h3>Selva Negra</h3>
-              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel3.png" alt="Torta Selva Negra" />
-              <p class="precio">$5000</p>
-              <button class="addCart">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="contenido">
-              <h3>Torta de Oreo</h3>
-              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel4.png" alt="Torta de Oreo" />
-              <p class="precio">$5000</p>
-              <button class="addCart">Agregar al carrito</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="contenido">
-              <h3>Torta Mousse Nutella</h3>
-              <p>Chocolate negro, licor de cereza, mermelada de cereza</p>
-              <img src="./img/pastel5.png" alt="Torta de Mousse Nutella" />
-              <p class="precio">$5000</p>
-              <button class="addCart">Agregar al carrito</button>
-            </div>
-          </div> -->
         </div>
         <h3 class="catalogo">Catálogo</h3>
         <div class="botones">
@@ -143,27 +109,10 @@
         <div class="cardTab">
           <h1>Carrito</h1>
           <div class="listCart">
-            <!-- <div class="item">
-              <div class="image">
-                <img src="./img/pastel2.png" alt="">
-              </div>
-              <div class="name">
-                NAME
-              </div>
-              <div class="totalPrice">
-                $200
-              </div>
-              <div class="quantity">
-                <span class="minus"><</span>
-                <span>1</span>
-                <span class="plus">></span>
-              </div>
-            </div> -->
-            
           </div>
           <div class="btn">
-            <button class="close">CLOSE</button>
-            <button class="checkOut">CHECK OUT</button>
+            <button class="close">CERRAR</button>
+            <button class="checkOut">COMPRAR</button>
           </div>
         </div>
       </section>
@@ -172,7 +121,7 @@
 
     <footer class="contenedorFooter">
       <div class="logo">
-        <img class="logoImg" src="./img/logo.png" alt="logo" />
+        <img class="logoImg" src="./secciones/img/logo.png" alt="logo" />
         <div class="socialMedia" id="socialMedia">
           <ul>
             <li>
@@ -181,7 +130,7 @@
                 target="_blank"
                 title="Seguinos en Instagram"
               >
-                <img src="/img/instagram.png" alt="Instagram" />
+                <img src="./secciones/img/instagram.png" alt="Instagram" />
               </a>
             </li>
             <li>
@@ -190,7 +139,7 @@
                 target="_blank"
                 title="Seguinos en Facebook"
               >
-                <img src="/img/facebook.png" alt="Facebook" />
+                <img src="./secciones/img/facebook.png" alt="Facebook" />
               </a>
             </li>
           </ul>
@@ -213,7 +162,8 @@
         </ul>
       </div>
     </footer>
-    <script src="./javascripts/carritoPestania.js"></script>
+     <script src="./logica/carritoPestania.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
 

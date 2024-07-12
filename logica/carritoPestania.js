@@ -9,6 +9,15 @@ let contenedorCart = document.querySelector('#contenedorCart');
 let btn = document.querySelector('.addCart');
 let listProduct = [];
 let carts = [];
+let comprar = document.querySelector(".checkOut")
+
+comprar.addEventListener("click", () => {
+    alert("Gracias por la compra");
+
+    // Alternar la clase para mostrar/ocultar el carrito
+    body.classList.toggle("showCart");
+
+});
 
 iconCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
@@ -20,6 +29,8 @@ closeCart.addEventListener("click", () => {
 
 
 
+
+
 const addDataToHTML = () => {
   listProductHTML.innerHTML = "";
   if (listProduct.length > 0) {
@@ -28,10 +39,10 @@ const addDataToHTML = () => {
       newProduct.classList.add("card");
       newProduct.dataset.id = product.id
       newProduct.innerHTML = `
-            <h3>${product.name}</h3>
+            <h3>${product.nombre}</h3>
               <p>${product.contenido}</p>
-              <img src="${product.image}" alt="Torta Bosque Negro" />
-              <p class="precio">$${product.price}</p>
+              <img src="${product.ruta_foto}" alt="Torta Bosque Negro" />
+              <p class="precio">$${product.precio}</p>
               <button class="addCart">Agregar al carrito</button>
               `;
               listProductHTML.appendChild(newProduct)
@@ -85,12 +96,12 @@ const addToCartToHTML = () =>{
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
             <div class="image">
-                    <img src="${info.image}">
+                    <img src="${info.ruta_foto}">
                 </div>
                 <div class="name">
-                ${info.name}
+                ${info.nombre}
                 </div>
-                <div class="totalPrice">$${info.price * item.quantity}</div>
+                <div class="totalPrice">$${info.precio * item.quantity}</div>
                 <div class="quantity">
                     <span class="minus"><</span>
                     <span>${item.quantity}</span>
@@ -141,7 +152,7 @@ const changeQuantityCart = (product_id, type) => {
 
 
 const initApp = () => {
-  fetch("./javascripts/productos.json")
+  fetch("http://localhost:3030/postres")
     .then((response) => response.json())
     .then((data) => {
       listProduct = data;

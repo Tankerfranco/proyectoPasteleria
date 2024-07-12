@@ -1,14 +1,14 @@
 @font-face {
     font-family: sofi-bold;
-    src: url(/registro-inicio/fonts/SofiaProBold.ttf);
+    src: url(/secciones/fonts/SofiaProBold.ttf);
 }
 @font-face {
     font-family: sofi-medium;
-    src: url(/registro-inicio/fonts/SofiaProMedium.ttf);
+    src: url(/secciones/fonts/SofiaProMedium.ttf);
 }
 @font-face {
     font-family: sofi-semi;
-    src: url(/registro-inicio/fonts/SofiaProSemiBold.ttf);
+    src: url(/secciones/fonts/SofiaProSemiBold.ttf);
 }
 
 *{
@@ -29,7 +29,7 @@ main {
     margin: auto;
     width: 55%;
     height: 95%;
-    background: url("/registro-inicio/img/texture.jpg");
+    background: url("/secciones/img/texture.jpg");
     background-size: contain;
     border-radius: 32px;
     border: 5px solid #322C2B;

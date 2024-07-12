@@ -1,14 +1,14 @@
 @font-face {
     font-family: sofi-bold;
-    src: url(/registro-inicio/fonts/SofiaProBold.ttf);
+    src: url(/secciones/fonts/SofiaProBold.ttf);
 }
 @font-face {
     font-family: sofi-medium;
-    src: url(/registro-inicio/fonts/SofiaProMedium.ttf);
+    src: url(/secciones/fonts/SofiaProMedium.ttf);
 }
 @font-face {
     font-family: sofi-semi;
-    src: url(/registro-inicio/fonts/SofiaProSemiBold.ttf);
+    src: url(/secciones/fonts/SofiaProSemiBold.ttf);
 }
 
 *{

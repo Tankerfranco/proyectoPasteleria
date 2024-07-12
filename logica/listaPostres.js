@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchPostres = async () => {
     try {
       const respuesta = await axios.get(`http://localhost:3030/postres`);
-      console.log(respuesta.data);
       const postres = respuesta.data;
       cardTortas.innerHTML = "";
       postres.forEach((postre) => {

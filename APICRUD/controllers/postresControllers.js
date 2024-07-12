@@ -38,7 +38,7 @@ const crearUnPostre = async (req, res) =>{
 }
 
 function saveImage(file) {
-    const newPath = `../img/${file.originalname}`;
+    const newPath = `../secciones/img/${file.originalname}`;
     fs.renameSync(file.path, newPath);
     return newPath;
   }

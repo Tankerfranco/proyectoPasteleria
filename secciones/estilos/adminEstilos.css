@@ -1,0 +1,88 @@
+@font-face {
+    font-family: sofi-bold;
+    src: url(/secciones/fonts/SofiaProBold.ttf);
+}
+@font-face {
+    font-family: sofi-medium;
+    src: url(/secciones/fonts/SofiaProMedium.ttf);
+}
+@font-face {
+    font-family: sofi-semi;
+    src: url(/secciones/fonts/SofiaProSemiBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background: url("/secciones/img/bg-blur.png") lightgray 50% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+ }
+
+ section{
+    margin: auto;
+    width: 55%;
+    height: 95%;
+    background: url("../img/texture.jpg");
+    background-size: contain;
+    border-radius: 32px;
+    border: 5px solid #322C2B;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ section h1{
+    font-size: 2.5rem;
+    font-family: sofi-semi;
+    margin: 10px 0;
+    text-align: center;
+ }
+
+ h2{
+    font-size: 2rem;
+    font-family: sofi-semi;
+    margin-top: 35px;
+ }
+
+.logo{
+    background-color: #ffffff;
+    border-radius: 40px;
+    width: 85px;
+    padding: 5px;
+    border: 2px solid #803D3B;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+.contenedorBotones{
+    display: flex;
+    gap: 50px;
+
+}
+
+button{
+    font-family: sofi-semi;
+    margin: 30px 0;
+    width: 100%;
+    height: 60px;
+    border-style: none;
+    background: #803D3B;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+ }
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
